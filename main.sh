@@ -10,8 +10,8 @@ fi
 LOC="$(which python3)"
 LOC="${LOC%/python3}"
 echo "$LOC"
-sudo pip install virtualenv virtualenvwrapper jupyter
-sudo pip install numpy scipy pandas matplotlib scikit-learn
+sudo pip3 install virtualenv virtualenvwrapper jupyter
+sudo pip3 install numpy scipy pandas matplotlib scikit-learn
 echo "export WORKON_HOME=\"\$HOME/.virtualenvs\"" >> $HOME/.bashrc
 echo "export VIRTUALENVWRAPPER_PYTHON=\"$LOC/python3\"" >> $HOME/.bashrc
 echo "source $LOC/virtualenvwrapper.sh" >> $HOME/.bashrc
